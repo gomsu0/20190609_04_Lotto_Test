@@ -116,8 +116,9 @@ public class MainDrive {
 			if(correntCount==5) {
 				System.out.println("2등당첨");
 			}
-				
-	
+		 else{
+				System.out.println("3등당첨");
+					 }
 		else if(correntCount==4) {
 			System.out.println("4등당첨");
 		}
