@@ -58,7 +58,32 @@ public class MainDrive {
 				  }
 			}
 		}
+//		2등을 제외한 나머지 경우의 등수를 판정.
+		int correntCount=0;
 		
+		for(int i=0;i<userInputLottonum.length;i++) {
+			
 		
+			for(int j=0;j<thisWeekLottoNum.length;j++) {
+				if(userInputLottonum[i]==thisWeekLottoNum[j]) {
+					correntCount++;//맞춘 숫자
+				}
+		}
+	   }
+		if(correntCount==6) {
+			System.out.println("1등당첨");
+		}
+		else if(correntCount==5) {
+			System.out.println("3등당첨");
+		}
+		else if(correntCount==4) {
+			System.out.println("4등당첨");
+		}
+		else if(correntCount==3) {
+			System.out.println("5등당첨");
+		}
+		else if(correntCount==0) {
+			System.out.println("꽝");
+		}
 	}
 }
