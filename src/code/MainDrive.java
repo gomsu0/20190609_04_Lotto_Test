@@ -82,7 +82,7 @@ public class MainDrive {
 		else if(correntCount==3) {
 			System.out.println("5등당첨");
 		}
-		else if(correntCount==0) {
+		else  {
 			System.out.println("꽝");
 		}
 	}
