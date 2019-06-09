@@ -39,6 +39,23 @@ public class MainDrive {
 			System.out.println(auto);
 		}
 		
+		for (int i=0;i<userAutoLottNum.length;i++) {
+			
+			for(int j=0;j<userAutoLottNum.length-1;j++ ) {
+				
+				if(userAutoLottNum[j]>userAutoLottNum[j+1]) {
+					
+					int temp=userAutoLottNum[j];
+					userAutoLottNum[j]=userAutoLottNum[j+1];
+					userAutoLottNum[j+1]=temp;
+					
+				}
+			}
+		}
+		System.out.println("정리된 랜덤숫자");
+		for(int sorted :userAutoLottNum) {
+			System.out.println(sorted);
+		}
 		
 		//Math.random의 결과:0<=1소수를 랜덤으로생성. 0보다크고45보다작은수를 랜덤으로할려면 *45
 		//ex)0.75124321564=>double
@@ -116,9 +133,7 @@ public class MainDrive {
 			if(correntCount==5) {
 				System.out.println("2등당첨");
 			}
-		 else{
-				System.out.println("3등당첨");
-					 }
+		
 		else if(correntCount==4) {
 			System.out.println("4등당첨");
 		}
@@ -129,6 +144,6 @@ public class MainDrive {
 	 	System.out.println("꽝");
 	}
   }
-}
+ }
 }
 
